@@ -6,27 +6,31 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JT9XE4PRSV"></script>
     <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-JT9XE4PRSV');
+        gtag('config', 'G-JT9XE4PRSV');
     </script>
-
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <h1><a href="index.html">WEB</a></h1>
-    <ol>
-        <li><a href="html.html">HTML</a></li>
-        <li><a href="css.html">CSS</a></li>
-        <li><a href="javaScript.html">JavaScript</a></li>
-    </ol>
-    <h2>CSS</h2>
-    <img src="webCake.png" width="250" />
-    <p>
-        HTML와 같이 CSS는 실제로 프로그래밍 언어는 아닙니다. 마크업(markup) 언어 도 아닙니다. <u><strong>Style sheet</strong> 언어</u> 입니다. HTML 문서에 있는 요소들에 선택적으로 스타일을 적용할 수 있다는 말입니다.
-    </p>
-    <p><a href="https://developer.mozilla.org/ko/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank" title="https://developer.mozilla.org/ko/docs/Learn/Getting_started_with_the_web/CSS_basics">출처: mdn web docs/CSS 기초</a></p>
+    <div id="grid">
+        <ol class="WEBindex">
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html" id="active">CSS</a></li>
+            <li><a href="javaScript.html">JavaScript</a></li>
+        </ol>
+        <div id="mainText">
+            <h2>CSS</h2>
+            <img src="webCake.png" width="250" />
+            <p>
+                HTML와 같이 CSS는 실제로 프로그래밍 언어는 아닙니다. 마크업(markup) 언어 도 아닙니다. <u><strong>Style sheet</strong> 언어</u> 입니다. HTML 문서에 있는 요소들에 선택적으로 스타일을 적용할 수 있다는 말입니다.
+            </p>
+            <p><a href="https://developer.mozilla.org/ko/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank" title="https://developer.mozilla.org/ko/docs/Learn/Getting_started_with_the_web/CSS_basics">출처: mdn web docs/CSS 기초</a></p>
+        </div>
+    </div>
 </body>
 </html>

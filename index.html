@@ -6,30 +6,42 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JT9XE4PRSV"></script>
     <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-JT9XE4PRSV');
+        gtag('config', 'G-JT9XE4PRSV');
     </script>
-
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <h1><a href="index.html">WEB</a></h1>
-    <ol>
-        <li><a href="html.html">HTML</a></li>
-        <li><a href="css.html">CSS</a></li>
-        <li><a href="javaScript.html">JavaScript</a></li>
-    </ol>
-    <h2>Let's make Web Site</h2>
-    <img src="html_img.jpg" width="700" />
-    <p>
-        <strong>생활코딩의 <u>WEBn</u>강의</strong>를 보고 만드는 중 입니다.<br /> 아름답고 흥미로운 웹사이트를 만드는 사람이 되고 싶어서 <strong>생활코딩의 WEBn강의</strong>를 듣고 있습니다.
-    </p>
-    <p style="margin-top:10px;">
-        이 강의를 통해서 나만의 웹사이트를 만드는 것이 목표입니다.
-    </p>
-    <a href="https://opentutorials.org/course/3083" target="_blank" title="https://opentutorials.org/course/3083"><u>생활코딩 WEBn강의 사이트</u></a>
+    <div id="grid">
+        <ol class="WEBindex">
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="javaScript.html">JavaScript</a></li>
+        </ol>
+        <!--    폰트태그를 이용해서 글씨의 색깔 바꾸기
+        <h1><a href="index.html"><font color="red">WEB</font></a></h1>
+        <ol>
+            <li><a href="html.html"><font color="red">HTML</font></a></li>
+            <li><a href="css.html"><font color="red">CSS</font></a></li>
+            <li><a href="javaScript.html"><font color="red">JavaScript</font></a></li>
+        </ol>
+            -->
+        <div id="mainText">
+            <h2>Let's make Web Site</h2>
+            <img src="html_img.jpg" />
+            <p>
+                <strong>생활코딩의 <u>WEBn</u>강의</strong>를 보고 만드는 중 입니다.<br /> 아름답고 흥미로운 웹사이트를 만드는 사람이 되고 싶어서 <strong>생활코딩의 WEBn강의</strong>를 듣고 있습니다.
+            </p>
+            <p style="margin-top:10px;">
+                이 강의를 통해서 나만의 웹사이트를 만드는 것이 목표입니다.
+            </p>
+            <a href="https://opentutorials.org/course/3083" target="_blank" title="https://opentutorials.org/course/3083"><u>생활코딩 WEBn강의 사이트</u></a>
+        </div>
+    </div>
 </body>
 </html>
