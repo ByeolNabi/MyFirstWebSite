@@ -5,11 +5,10 @@
     <meta charset="utf-8" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JT9XE4PRSV"></script>
-    <script>
+    <script src="colors.js">
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-JT9XE4PRSV');
     </script>
     <link rel="stylesheet" href="style.css" />
@@ -17,8 +16,20 @@
 
 <body>
     <h1><a href="index.html">WEB</a></h1>
+    <!--
+        <input type="button" value="night" onclick="
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        "/>
+        <input type="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        " />
+    -->
     <div id="grid">
         <ol class="WEBindex">
+          <input id="night_day"  style="margin-bottom:12px" type="button" value="night" onclick="nightDayHandler(this)
+          " />
             <li><a href="html.html">HTML</a></li>
             <li><a href="css.html">CSS</a></li>
             <li><a href="javaScript.html">JavaScript</a></li>
@@ -45,3 +56,7 @@
     </div>
 </body>
 </html>
+<!--
+    야간모드 주간보드 색깔 변화
+    이미 지정된 색깔을 바꿀 수 있는 최상위 우선순위로 지정하는 방법?
+-->
